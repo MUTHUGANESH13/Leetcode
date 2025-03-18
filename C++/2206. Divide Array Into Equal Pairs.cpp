@@ -1,14 +1,14 @@
 class Solution {
-public
-    bool divideArray(vectorint& n) {
-        sort(n.begin(),n.end());
+public:
+    bool divideArray(vector<int>& n) {
+        //sort(n.begin(),n.end());
         int i,fla=0;
-        unordered_mapint,intf;
-        for(i=0;in.size();i++)
+        unordered_map<int,int>f;
+        for(i=0;i<n.size();i++)
         {
             f[n[i]]++;
         }
-        for(i=0;if.size();i++)
+        for(i=0;i<f.size();i++)
         {
             if(f[i]%2!=0)
             fla=1;
